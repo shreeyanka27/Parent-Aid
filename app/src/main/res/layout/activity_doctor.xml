@@ -1,0 +1,413 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="openDoctorDetails">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#87CEFA"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/doctorNameTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Ashok Dutta"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/doctorLocationTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sarita Vihar" />
+
+                <RadioGroup
+                    android:id="@+id/timeSlotRadioGroup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9:00 AM" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:00 AM" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:00 AM" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2:00 PM" />
+
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/bookAppointmentButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Appointment"
+                    android:onClick="bookAppointment" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="openDoctorDetails">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#87CEFA"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/doctorNameTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Ankit Parakh"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/doctorLocationTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pusa Road" />
+
+                <RadioGroup
+                    android:id="@+id/timeSlotRadioGroup2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:00 AM" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:00 AM" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2:00 PM" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4:00 PM" />
+
+
+
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/bookAppointmentButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Appointment"
+                    android:onClick="bookAppointment" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="openDoctorDetails">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#87CEFA"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/doctorNameTextView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr Smitha Panikar"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/doctorLocationTextView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sarita Vihar" />
+
+                <RadioGroup
+                    android:id="@+id/timeSlotRadioGroup3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9:00 AM" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:00 AM" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:00 AM" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4:00 PM" />
+
+
+                </RadioGroup>
+
+
+                <Button
+                    android:id="@+id/bookAppointmentButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Appointment"
+                    android:onClick="bookAppointment" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="openDoctorDetails">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#87CEFA"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/doctorNameTextView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Pushpesh Awasthi"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/doctorLocationTextView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rajendernagar" />
+
+                <RadioGroup
+                    android:id="@+id/timeSlotRadioGroup4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:00 AM" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12:00 PM" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2:00 AM" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4:00 PM" />
+
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/bookAppointmentButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Appointment"
+                    android:onClick="bookAppointment" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="openDoctorDetails">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#87CEFA"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/doctorNameTextView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Amit Tyagi"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/doctorLocationTextView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Patel Nagar" />
+
+                <RadioGroup
+                    android:id="@+id/timeSlotRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton61"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9:00 AM" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton62"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:00 AM" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton63"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11:00 AM" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton64"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4:00 PM" />
+
+
+
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/bookAppointmentButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Appointment"
+                    android:onClick="bookAppointment" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Add more CardViews for each doctor -->
+
+    </LinearLayout>
+</ScrollView>

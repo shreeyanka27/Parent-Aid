@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sleeping"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/back"
+    android:padding="16dp"
+    tools:context=".Sleeping">
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="00:00:00"
+        android:textSize="48sp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timerTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/endButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:enabled="true"
+        android:text="End" />
+
+    <TextView
+        android:id="@+id/historyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/endButton"
+        android:layout_marginTop="128dp"
+        android:text="TRACK YOUR BABY'S SLEEP!"
+        android:textColor="#9C27B0"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:translationY="-50dp" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/historyTextView"
+        android:layout_marginTop="16dp"
+        android:translationY="-50dp">
+
+        <TableLayout
+            android:id="@+id/historyTableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow android:layout_margin="2dp">
+
+                <TextView
+                    android:id="@+id/dateColumn"
+                    android:background="@drawable/cell_border"
+                    android:padding="5dp"
+                    android:text="Date"
+                    android:textAlignment="center"
+                    android:textColor="#E91E63"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/startTimeColumn"
+                    android:background="@drawable/cell_border"
+                    android:padding="5dp"
+                    android:text="Start Time"
+
+                    android:textAlignment="center"
+                    android:textColor="#E91E63"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/currentTimeColumn"
+                    android:background="@drawable/cell_border"
+                    android:padding="5dp"
+                    android:text="Stop Time"
+
+                    android:textAlignment="center"
+                    android:textColor="#E91E63"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/elapsedTimeColumn"
+                    android:background="@drawable/cell_border"
+                    android:padding="5dp"
+                    android:text="Elapsed Time"
+
+                    android:textAlignment="center"
+                    android:textColor="#E91E63"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

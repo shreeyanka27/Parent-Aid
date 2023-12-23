@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".Feeding">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/lastFedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Last Fed Time"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/milkTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Milk (42 calories)"
+                android:textColor="#E91E63"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/milkCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Milk"
+                android:textColor="#E91E63" />
+
+            <TextView
+                android:id="@+id/softCheeseTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Soft Cheese (402 calories)"
+                android:textColor="#F44336"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/softCheeseCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soft Cheese"
+                android:textColor="#F44336" />
+
+            <TextView
+                android:id="@+id/cerealsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cereals (370 calories)"
+                android:textColor="#9C27B0"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cerealsCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cereals"
+                android:textColor="#9C27B0" />
+
+            <TextView
+                android:id="@+id/pureedFruitsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pureed Fruits"
+                android:textColor="#FFC107"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/appleCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple (89 calories)"
+                android:textColor="#FF9800" />
+
+            <CheckBox
+                android:id="@+id/bananaCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banana (89 calories)"
+                android:textColor="#FF9800" />
+
+            <CheckBox
+                android:id="@+id/mangoCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mango (60 calories)"
+                android:textColor="#FF9800" />
+
+            <CheckBox
+                android:id="@+id/avocadoCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avocado(23 calories)"
+                android:textColor="#FF9800" />
+
+            <CheckBox
+                android:id="@+id/melonCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Melon (68 calories)"
+                android:textColor="#FF9800" />
+
+            <TextView
+                android:id="@+id/pureedVegetablesTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Pureed Vegetables"
+                android:textColor="#4CAF50"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/beansCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Beans (48 calories)"
+                android:textColor="#4CAF50" />
+
+            <CheckBox
+                android:id="@+id/potatoCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Potato (88 calories)"
+                android:textColor="#4CAF50" />
+
+            <CheckBox
+                android:id="@+id/tomatoCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Tomato (38 calories)"
+                android:textColor="#4CAF50" />
+
+            <CheckBox
+                android:id="@+id/carrotCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Carrot (41 calories)"
+                android:textColor="#4CAF50" />
+
+            <CheckBox
+                android:id="@+id/cucumberCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Cucumber (15 calories)"
+                android:textColor="#4CAF50" />
+
+            <Button
+                android:id="@+id/recordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:text="Record" />
+
+            <TextView
+                android:id="@+id/totalCaloriesTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="TOTAL CALORIES"
+                android:textColor="#3F51B5"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DONT KNOW ABOUT CALORIES?" />
+
+            <TableLayout
+                android:id="@+id/dataTable2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="ExtraText,MissingConstraints">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="79dp">
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:padding="5dp"
+                        android:text=" Time "
+                        android:textStyle="bold" />
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:padding="5dp"
+                        android:text="  Total Calories "
+                        android:textStyle="bold" />
+
+
+
+                </TableRow>
+            </TableLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

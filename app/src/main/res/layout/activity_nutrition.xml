@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".nutrition">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KNOW MORE ABOUT FEEDING YOUR CHILD"
+                android:textAlignment="center"
+                android:textColor="#E91E63"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="FOOD/MILK INTAKE"
+                android:textAlignment="center"
+                android:textColor="#D82323"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="403dp"
+                android:layout_height="145dp"
+                android:padding="16dp"
+                tools:ignore="MissingConstraints">
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="AGE(months)"
+                        android:textColor="#673AB7" />
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="WHEN TO FEED"
+                        android:textColor="#673AB7" />
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="CALORIES"
+                        android:textColor="#673AB7" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="0-1"
+                        android:textColor="#F44336" />
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Every 2 hours or on demand"
+                        android:textColor="#F44336" />
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="60-120"
+                        android:textColor="#F44336" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="1-2"
+                        android:textColor="#E91E63" />
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Every 2-3 hours"
+                        android:textColor="#E91E63" />
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="120-210"
+                        android:textColor="#E91E63" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="1-4"
+                        android:textColor="#009688" />
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Every 2-3 hours"
+                        android:textColor="#009688" />
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="120-210"
+                        android:textColor="#009688" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="5-6"
+                        android:textColor="#2196F3" />
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Every 2-3 hours"
+                        android:textColor="#2196F3" />
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="110-125"
+                        android:textColor="#03A9F4" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="FOOD ITEMS"
+                android:textAlignment="center"
+                android:textColor="#673AB7"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="388dp"
+                android:layout_height="337dp"
+                android:padding="16dp"
+                tools:ignore="MissingConstraints">
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="AGE(months)"
+                        android:textColor="#673AB7" />
+
+                    <TextView
+                        android:background="@drawable/cell_border"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="WHAT TO FEED"
+                        android:textColor="#673AB7" />
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="0-4"
+                        android:textColor="#F44336" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Milk\n"
+                        android:textColor="#F44336" />
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="4-6"
+                        android:textColor="#E91E63" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Squashed Fruits\n Apple \n Avacado \nBanana \n Pear"
+                        android:textColor="#E91E63" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="Squashed Veggies\nBeans \n Potato \nSquash \nButternut"
+                        android:textColor="#E91E63" />
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="6-8"
+                        android:textColor="#4CAF50" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Squashed Fruits\nMango \n Apricot \nPlums \nPeaches"
+                        android:textColor="#4CAF50" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="Squashed Veggies\nCarrots \n Peas\nParsnips \nZucchini"
+                        android:textColor="#4CAF50" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="8-10"
+                        android:textColor="#FF5722" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Squashed Fruits\nMango \n Apricot \nPlums \nPeaches\n"
+                        android:textColor="#FF5722" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="Squashed Veggies\nCarrots \n Peas\nParsnips \nZucchini\n"
+                        android:textColor="#FF5722" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:text="Know more!"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
